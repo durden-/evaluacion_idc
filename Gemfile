@@ -19,7 +19,7 @@ gem "rspec-rails", '2.6.1', :group => [:test, :development]
 
 group :development do
   gem "pg"
-  gem 'annotate', '2.4.0'
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
   gem 'faker', '0.3.1'
 end
 

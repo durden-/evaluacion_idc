@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/ctran/annotate_models.git
+  revision: 667ab38892da2dccc1af1244c489d2e575553ce0
+  specs:
+    annotate (2.4.1.beta1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -30,7 +36,6 @@ GEM
       activesupport (= 3.1.0)
     activesupport (3.1.0)
       multi_json (~> 1.0)
-    annotate (2.4.0)
     arel (2.2.1)
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
@@ -136,7 +141,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  annotate (= 2.4.0)
+  annotate!
   coffee-script
   execjs
   factory_girl_rails (= 1.0)
