@@ -1,9 +1,9 @@
-<h1>Sign up</h1>
+<h1>Formulario de registro</h1>
 
 <%= form_for(@user) do |f| %>
   <%= render 'shared/error_messages' %>
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name, "Nombre" %><br />
     <%= f.text_field :name %>
   </div>
 
@@ -18,7 +18,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br />
+    <%= f.label :password_confirmation, "Confirmacion" %><br />
     <%= f.password_field :password_confirmation %>
   </div>
 

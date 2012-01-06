@@ -1,6 +1,12 @@
 <header>
   <%= link_to logo, root_path %>
   <nav class="round">
-    <%= link_to logo, "http://www.telmex.com/mx/empresa/soluciones/customer-network-operation-center.html" %>
+    <ul>
+     <% if signed_in? %>
+     <li><%= link_to "Terminar sesion", signout_path, :method => :delete %></li>
+     <% else %>
+     <li><%= link_to "Registrate!", signin_path %></li>
+     <% end %>
+   </ul>
   </nav>
 </header>

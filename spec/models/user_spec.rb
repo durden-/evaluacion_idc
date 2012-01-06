@@ -140,4 +140,16 @@ describe User do
       end
     end
   end
+
+
+  describe "evaluation associations" do
+
+    before(:each) do
+      @user = User.create(@attr)
+    end
+
+    it "should have a evaluation attribute" do
+      @user.should respond_to(:evaluations)
+    end
+  end
 end
