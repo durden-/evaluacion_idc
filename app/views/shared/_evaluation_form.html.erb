@@ -1,0 +1,70 @@
+<%= form_for @evaluation do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <table class="field">
+    <tr>
+      <th>
+        <%= f.label :incident, "Incidente" %>
+      </th>
+      <td>
+        <%= f.text_field :incident %>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <%= f.label :clarify %>
+      </th>
+      <td>
+        <%= f.text_field :clarify %>
+      </td>
+    </tr>
+  </table>
+  <div class="field">
+    <%= f.label :pregunta_uno, "El ingeniero de campo llevaba todo lo necesario para realizar la asistencia:" %>
+  </div>
+  <div class="field">
+    <%= f.radio_button :pregunta_uno, true %>
+    <%= f.label :pregunta_uno_si, "Si" %>
+    <%= f.radio_button :pregunta_uno, false %>
+    <%= f.label :pregunta_uno_no, "No" %>
+  </div>
+  <div class="field">
+    <%= f.label :pregunta_dos, "El Ingeniero de campo llegó a la hora indicada:" %>
+  </div>
+  <div class="field">
+    <%= f.radio_button :pregunta_dos, true %>
+    <%= f.label :pregunta_dos_si, "Si" %>
+    <%= f.radio_button :pregunta_dos, false %>
+    <%= f.label :pregunta_dos_no, "No" %>
+  </div>
+  <div class="field">
+    <%= f.label :pregunta_tres, "El ingeniero de campo tuvo la capacida técnica mínima para realizar la actividad:" %>
+  </div>
+  <div class="field">
+    <%= f.radio_button :pregunta_tres, true %>
+    <%= f.label :pregunta_tres_si, "Si" %>
+    <%= f.radio_button :pregunta_tres, false %>
+    <%= f.label :pregunta_tres_no, "No" %>
+  </div>
+  <div class="field">
+    <%= f.label :pregunta_cuatro, "Se recibio alguna queja del personal en sitio sobre el IDC:" %>
+  </div>
+  <div class="field">
+    <%= f.radio_button :pregunta_cuatro, true %>
+    <%= f.label :pregunta_cuatro_si, "Si" %>
+    <%= f.radio_button :pregunta_cuatro, false %>
+    <%= f.label :pregunta_cuatro_no, "No" %>
+  </div>
+  <table class="field">
+    <tr>
+      <th>
+        <%= f.label :notes, "Comentarios:" %>
+      </th>
+      <td>
+        <%= f.text_area :notes %>
+      </td>
+    </tr>
+  </table>
+  <div class="actions">
+    <%= f.submit "Enviar" %>
+  </div>
+<% end %>

@@ -1,4 +1,16 @@
-<h1><%= @title %></h1>
-<p>
-  Evaluacion de los IDC que auxilian al CNOC.
-</p>
+<% if signed_in? %>
+  <table class="front" summary="For signed-in users">
+    <tr>
+      <td class="main">
+        <h1 class="evaluation">Favor de llenar el siguiente formulario:</h1>
+        <%= render 'shared/evaluation_form' %>
+      </td>
+    </tr>
+  </table>
+<% else %>
+  <p>
+  <h1>Evaluacion de los IDC que auxilian al CNOC.</h1>
+  </p>
+
+  <%= link_to "Registrate!", signup_path, :class => "signup_button round" %>
+<% end %>

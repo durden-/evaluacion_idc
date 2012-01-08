@@ -2,6 +2,7 @@ class PagesController < ApplicationController
 
   def home
     @title = "Inicio"
+    @evaluation = Evaluation.new if signed_in?
   end
 
   def contact

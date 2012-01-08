@@ -217,7 +217,6 @@ table.microposts tr td.micropost {
 table.microposts tr td.micropost span.timestamp {
   display: block;
   font-size: 85%;
-  color: #666;
 }
 
 div.user_info img {
@@ -236,11 +235,11 @@ div.user_info span.microposts {
   font-size: 80%;
 }
 
-form.new_micropost {
+form.new_evaluation {
   margin-bottom: 2em;
 }
 
-form.new_micropost textarea {
+form.new_evaluation textarea {
   height: 4em;
   margin-bottom: 0;
 }

@@ -6,7 +6,7 @@ describe "Layout links" do
     it "should have a signin link" do
       visit root_path
       response.should have_selector("a", :href => signin_path,
-                                         :content => "Registrate!")
+                                         :content => "Iniciar sesion")
     end
   end
 
