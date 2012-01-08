@@ -3,10 +3,10 @@ require 'spec_helper'
 describe "Layout links" do
 
   describe "when not signed in" do
-    it "should have a signin link" do
+    it "should have a signup link" do
       visit root_path
-      response.should have_selector("a", :href => signin_path,
-                                         :content => "Iniciar sesion")
+      response.should have_selector("a", :href => signup_path,
+                                         :content => "Registrate")
     end
   end
 
