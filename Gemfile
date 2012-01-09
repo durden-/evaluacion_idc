@@ -5,6 +5,7 @@ gem 'rails', '3.1.0'
 gem 'gravatar_image_tag', '1.0.0.pre2'
 #gem 'will_paginate', '3.0.2'
 gem 'sqlite3', '1.3.4'
+gem "pg", :group => :production
 gem 'execjs'
 gem 'therubyracer'
 
@@ -17,7 +18,6 @@ gem 'jquery-rails'
 
 gem "rspec-rails", '2.6.1', :group => [:test, :development]
 
-gem "pg", :group => :production
 
 group :development do
   gem "pg"
