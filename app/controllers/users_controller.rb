@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     if @user.save
       sign_in @user
       flash[:success] = "Bienvenido!!!!"
-      redirect_to @user
+      redirect_to root_path
     else
       @title = "Formulario de registro"
       render 'new'
