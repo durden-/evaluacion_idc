@@ -17,6 +17,8 @@ gem 'jquery-rails'
 
 gem "rspec-rails", '2.6.1', :group => [:test, :development]
 
+gem "pg", :group => :production
+
 group :development do
   gem "pg"
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
