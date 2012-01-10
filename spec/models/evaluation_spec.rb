@@ -2,7 +2,7 @@
 #
 # Table name: evaluations
 #
-#  id              :integer         not null, primary key
+#  id              :integer         primary key
 #  incident        :string(255)
 #  user_id         :integer
 #  clarify         :string(255)
@@ -11,9 +11,10 @@
 #  pregunta_tres   :boolean
 #  pregunta_cuatro :boolean
 #  notes           :text
-#  created_at      :datetime
-#  updated_at      :datetime
+#  created_at      :timestamp
+#  updated_at      :timestamp
 #
+
 require 'spec_helper'
 
 describe Evaluation do
