@@ -11,6 +11,6 @@ module ApplicationHelper
   end
 
   def logo
-    image_tag("cnoc.png", :alt => "Evaluacion IDC", :class => "round")
+    image_tag("cnoc_iso.png", :alt => "Evaluacion IDC", :class => "round")
   end
 end
