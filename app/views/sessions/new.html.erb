@@ -1,4 +1,4 @@
-<h1>Inicio de sesion</h1>
+<h1>Inicio de sesión</h1>
 
 <%= form_for(:session, :url => sessions_path) do |f| %>
   <div class="field">
@@ -10,8 +10,8 @@
     <%= f.password_field :password %>
   </div>
   <div class="actions">
-    <%= f.submit "Inicar sesion" %>
+    <%= f.submit "Inicar sesión" %>
   </div>
 <% end %>
 
-<p>No te has registrado? <%= link_to "Registrate ahora!", signup_path %></p>
+<p>No te has registrado? <%= link_to "Regístrate!", signup_path %></p>

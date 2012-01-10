@@ -3,9 +3,9 @@
   <nav class="round">
     <ul>
      <% if signed_in? %>
-     <li><%= link_to "Terminar sesion", signout_path, :method => :delete %></li>
+     <li><%= link_to "Terminar sesión", signout_path, :method => :delete %></li>
      <% else %>
-     <li><%= link_to "Registrate!", signup_path %></li>
+     <li><%= link_to "Regístrate!", signup_path %></li>
      <% end %>
    </ul>
   </nav>
