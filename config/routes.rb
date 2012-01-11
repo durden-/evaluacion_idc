@@ -1,7 +1,5 @@
 EvaluacionIdc::Application.routes.draw do
 
-  get "evaluations/create"
-
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
   resources :evaluations, :only => [:create]
