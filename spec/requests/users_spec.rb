@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'spec_helper'
 
 describe "Users" do
@@ -12,7 +13,7 @@ describe "Users" do
           fill_in "Nombre",         :with => ""
           fill_in "Email",        :with => ""
           fill_in "Password",     :with => ""
-          fill_in "Confirmacion", :with => ""
+          fill_in "Confirmación", :with => ""
           click_button
           response.should render_template('users/new')
           response.should have_selector("div#error_explanation")
@@ -28,11 +29,11 @@ describe "Users" do
           fill_in "Nombre",         :with => "Jaime Cruz"
           fill_in "Email",        :with => "jhcruz@reduno.com.mx"
           fill_in "Password",     :with => "camarones"
-          fill_in "Confirmacion", :with => "camarones"
+          fill_in "Confirmación", :with => "camarones"
           click_button
           response.should have_selector("div.flash.success", 
                                         :content => "Bienvenido")
-          response.should render_template('users/show')
+          response.should render_template('/')
         end.should change(User, :count).by(1)
       end
     end
@@ -60,7 +61,7 @@ describe "Users" do
         fill_in :password, :with => user.password
         click_button
         controller.should be_signed_in
-        click_link "Terminar sesion"
+        click_link "Terminar sesión"
         controller.should_not be_signed_in
       end
    end

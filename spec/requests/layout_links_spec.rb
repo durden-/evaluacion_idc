@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'spec_helper'
 
 describe "Layout links" do
@@ -5,8 +6,8 @@ describe "Layout links" do
   describe "when not signed in" do
     it "should have a signup link" do
       visit root_path
-      response.should have_selector("a", :href => signup_path,
-                                         :content => "Registrate")
+      response.should have_selector("a", :href => signin_path,
+                                         :content => "Iniciar sesión")
     end
   end
 
@@ -23,7 +24,7 @@ describe "Layout links" do
     it "should have a signout link" do
       visit root_path
       response.should have_selector("a", :href => signout_path,
-                                         :content => "Terminar sesion")
+                                         :content => "Terminar sesión")
     end
   end
 end
